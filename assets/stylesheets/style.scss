@@ -1,0 +1,344 @@
+    @charset "utf-8";
+    @import 'https://fonts.googleapis.com/css?family=Montserrat:700';
+    /* base */
+
+    // pink=#FF63ED lightash=#D5C9FF vioret=#49077F yellow=#DBD702
+    // .wrapper{
+    // background-color: black;
+    // }
+    body {
+        font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    }
+
+    h1 img {
+        margin: auto;
+        display: flex;
+        justify: center;
+    }
+
+    h1 {
+        background: url("../images/base1.jpg") 0 0 repeat-x;
+        background-size: contain;
+        height: 130px;
+        margin: 0px;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10000;
+    }
+
+    .navbar-nav>li>a {
+        color: #FF63ED;
+        font-size: 14px;
+        font-weight: bold;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .navbar-nav>li>a:hover {
+        color: #49077F;
+    }
+
+    h2 {
+        color: #DBD702;
+        font-size: 35px;
+        text-align: center;
+        border-bottom: 1.5px dotted #49077F;
+    }
+
+    h3 {
+        background-color: black;
+        color: #FF63ED;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h4 {
+        color: #DBD702;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .icon {
+        color: #FF63ED!important;
+        border: 1px dotted #FF63ED;
+        font-size: 15px;
+        text-align: center;
+        background-color: #49077F;
+        opacity: 0.7;
+        &:hover {
+            color: #D5C9FF;
+        }
+    }
+
+    // nav
+    /* biography*/
+
+    .stage {
+        list-style: none;
+        padding: 0;
+    }
+
+    .scene {
+        width: 550px;
+        height: 300px;
+        margin: auto;
+        perspective: 1000px;
+    }
+
+    .movie {
+        width: 550px;
+        height: 300px;
+        transform-style: preserve-3d;
+        transform: translateZ(-130px);
+        transition: transform 350ms;
+    }
+
+    .movie:hover {
+        transform: rotateY(-90deg) translateZ(20px);
+    }
+
+    .movie .poster,
+    .movie .info {
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        backface-visibility: hidden;
+    }
+
+    .movie .poster {
+        transform: translateZ(130px);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .movie .info {
+        transform: rotateY(90deg) translateZ(130px);
+        border: 1px solid #B8B5B5;
+    }
+
+    .movie::after {
+        content: '';
+        width: 550px;
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+        transform-origin: 100% 100%;
+        transform: rotateX(90deg) translateY(130px);
+        transition: box-shadow 350ms;
+    }
+
+    .movie:hover::after {
+        box-shadow: 20px -5px 50px rgba(0, 0, 0, 0.3);
+    }
+
+    .info header {
+        color: #FFF;
+        padding: 7px 10px;
+        font-weight: bold;
+        height: 195px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+    }
+
+    .movie .poster,
+    .movie .info {
+        transition: box-shadow 350ms;
+    }
+
+    .movie .poster {
+        box-shadow: inset 0px 0px 40px rgba(255, 255, 255, 0);
+    }
+
+    .movie:hover .poster {
+        box-shadow: inset 300px 0px 40px rgba(255, 255, 255, 0.8);
+    }
+
+    .movie .info,
+    .movie .info header {
+        box-shadow: inset -300px 0px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .movie:hover .info,
+    .movie:hover .info header {
+        box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0);
+    }
+
+    .scene .movie .poster {
+        background-image: url(../images/bio2.jpg);
+    }
+
+    .scene .info {
+        background-image: url(../images/back.jpg);
+    }
+
+    #bio {
+        background-image: url("../images/base2.jpg");
+        border: 1px solid #49077F;
+        border-radius: 5px;
+        & #biotext {
+            background-color: black;
+            color: #D5C9FF;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+    }
+
+    #member {
+        background-color: #49077F;
+        color: #FF63ED;
+        opacity: 0.7;
+        font-size: 24px;
+        text-align: center;
+        border: 1px dotted #FF63ED;
+        border-radius: 5px;
+    }
+
+    .media {
+        background-color: rgba(51, 51, 51, 0.8);
+        padding: 10px;
+        border: 5px solid #000;
+        color: #FF63ED;
+    }
+
+    .media-left {
+        // background: radial-gradient(#49077F, black);
+        // opacity: 0.8;
+        color: #D5C9FF;
+        font-size: 18px;
+        text-align: center;
+        padding: 5px 10px;
+        margin: 5px 10px;
+    }
+
+    .media>.media-body p {
+        background-color: #49077F;
+        color: #FF63ED;
+        opacity: 0.7;
+        font-size: 16px;
+        text-align: center;
+        border: 1px dotted #FF63ED;
+        border-radius: 5px;
+        margin-top: 70px;
+        &.icon {
+            margin-top: 10px;
+        }
+    }
+
+    .media>.media-body>.icon a {
+        color: #FF63ED;
+        &:hover {
+            color: #D5C9FF;
+        }
+    }
+
+    // gallery
+    #gallery {
+        border: 1px solid #FF63ED;
+        border-radius: 5px;
+        padding: 5px;
+        .icon {
+            height: 40px;
+            padding-bottom: 27px;
+            font-size: 10px;
+            a {
+                color: #FF63ED!important;
+                font-size: 20px;
+                &:hover {
+                    // transition:#D5C9FF .3s;
+                    color: #D5C9FF!important;
+                }
+                // i.fa {
+                //     color: #FF63ED!important;
+                // }
+            }
+        }
+    }
+    /* news */
+
+    #news {
+        border: 1px solid #FF63ED;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    #newslist {
+        background: radial-gradient(#49077F, black);
+        color: #D5C9FF;
+        font-size: 14px;
+        opacity: 0.7;
+        position: relative;
+        padding: 0px;
+        height: 100px;
+        overflow-y: scroll;
+        &>ul>li {
+            list-style-type: none;
+            border-bottom: 1px dotted #D5C9FF;
+        }
+    }
+
+    #event {
+        color: #DBD702;
+        font-size: 15px;
+        text-align: center;
+        & img {
+            margin: auto;
+        }
+    }
+
+    #stage {
+        color: #DBD702;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    // contact
+    #contact {
+        border: 1px solid #FF63ED;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .form {
+        background-color: #49077F;
+        color: #FF63ED;
+        opacity: 0.7;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    input,
+    textarea {
+        background: radial-gradient(white, #49077F);
+        padding: 5px 10px;
+        display: block;
+        border-style: inset;
+    }
+
+    textarea {
+        margin-bottom: 10px;
+        border-style: 5px inset;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .button button {
+        background: radial-gradient(#49077F, #D5C9FF);
+        width: 55px;
+        margin: 0 auto;
+        padding: 5px 0;
+        color: #FF63ED;
+        border-style: inset;
+        border-radius: 3px;
+        font-size: 14px;
+        text-align: center;
+        &:hover {
+            color: #49077F;
+        }
+    }

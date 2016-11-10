@@ -1,0 +1,204 @@
+<!Doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="discription" content="Honey Pot's talking about to Winnie the POOH">
+    <meta name="keyword" content="POOH">
+    <title>Winnie the POOH with Honey Pot</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--jquery-->
+    <script type="text/javascript">
+    jQuery(function($) {
+
+        var nav = $('#fixedBox'),
+            offset = nav.offset();
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > offset.top) {
+                nav.addClass('fixed');
+            } else {
+                nav.removeClass('fixed');
+            }
+        });
+
+    });
+    </script>
+    <link href="../js/bootstrap.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="http://jaysalvat.github.io/vegas/releases/latest/vegas.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+    <link href='../js/onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <!-- custom fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/pooh4.png">
+    <!-- custom cSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script src="http://jaysalvat.github.io/vegas/releases/latest/vegas.js"></script>
+    <script>
+    $(function() {
+        $('body').vegas({
+            slides: [{
+                src: 'images/pooh5.jpg'
+            }, {
+                src: 'images/pooh1.jpg'
+            }, {
+                src: 'images/100.jpg'
+            }, {
+                src: 'images/pooh3.jpg'
+            }]
+        });
+    });
+    </script>
+    <header>
+        <h1><a href="#home"><img src="images/logo.png" width="400" height="100" alt="Winnie the POOH with Honey Pot"></a></h1>
+        <nav class="navbar navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fixedBox">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="fixedBox" class="nav">
+                <ul class="nav navbar-nav text-center">
+                    <li><a href="#here">What'S heRE?</a></li>
+                    <li><a href="#pooh">WhO's POOh?</a></li>
+                    <li><a href="#story">StorY</a></li>
+                    <li><a href="#let">LeTTeR</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="pooh">
+            <script>
+            $(".pooh").onepage_scroll({
+                sectionContainer: "section", // セクションとなる要素（divなどに変更も可）
+                easing: "linear", // イージング、他にも多数のエフェクトを用意 "ease", "linear", "ease-in", "ease-out", "ease-in-out", "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+                animationTime: 1000, // アニメーションの時間
+                pagination: true, // ページネーションの有無
+                updateURL: false // ページをスクロールした際にURLも変更するかの有無
+            });
+            </script>
+            <section id="home">
+                <h3>Welcome to the 100 acre's Woods...</h3>
+                <!--main image-->
+                <img src="images/pooh1.jpg" alt="POOH on the Castle">
+                <p lang="en" style="color:blue;">There're a little something HAPPY the times with POOH.
+                    <br>Honey pot really knows about the bear who name's Winnie the POOH.
+                    <br>Would you like to listen to Honey Pot that about the habits of POOH.
+                    <br>You maybe found a small new things...enjoy!</p>
+            </section>
+            <section id="here">
+                <h2><img src="images/poyon.png" height="100" width="100" alt="poyon">What'S heRE?</h2>
+                <img src="images/pooh_sub.jpg" alt="">
+                <p>ここは１００acreの森。
+                    <br> 東から数えて四本目の大きな楠の八番目にあたる根っこの片隅に一冊の本があります。
+                    <br> まるで何十年も大切に大切に木の葉にくるまれていたようなあたたかな本です。そこには秘密の物語が書いてありました。
+                    <br> 作者はアラン・アレクサンダー・ミルン（Alan Alexander Milne, 1882年1月18日 - 1956年1月31日ロンドン生まれのスコットランド人）。挿絵はアーネスト・ハワード・シェパード（Ernest Howard Shepard, 1879年12月10日-1976年3月24日イギリスの画家）が手掛けています。
+                    <br> そうです。「クマのプーさん」という本です。ここではくまのプーさんについて少しだけ秘密をお話ししようと思います。</p>
+            </section>
+            <section id="pooh">
+                <h2><img src="images/poyon.png" height="100" width="100" alt="poyon">WhO's POOh?</h2>
+                <p class="100">PＯＯＨってなにもの？？
+                    <br>１００acreの森には個性豊かなともだちがいっぱい住んでいることをご存知でしょうか。
+                    <br> それはそれはきらきらゆるゆると笑顔あふれる悠久の時間を過ごしています。かれこれ、９０年が経ったでしょうか。
+                    <br>秘密の本の中からちょっと拝借して、不思議な方々を紹介いたしましょう。</p>
+                <div class="media">
+                    <div class="media-left"> <img src="images/pooh.png" /></div>
+                    <div class="media-body">
+                        <h4> プー</h4>
+                        <p>100acreの森に住む、のんびりやのくまのぬいぐるみ。サンダースと書かれた表札が目じるしの、窓も屋根もある大きな木の家で暮らしています。とても食いしんぼうで、はちみつが大好き。ディズニーデビュー作の『プーさんとはちみつ』（1966）では、ラビットの家のはちみつを全てたいらげてお家から出ることができなくなってしまうほどです。プーは森の仲間を大切にする、とてもやさしくて友だち思いです。けれどもときたま自分勝手だったりもします。はちみつのためなら努力を怠りません。考えるときに頭をぽんぽん叩くのが癖です。</p>
+                    </div>
+                </div>
+                <table>
+                    <td><img src="images/robin.png" height="100" width="150" /></td>
+                    <td><img src="images/piglet.png" height="100" width="150" /></td>
+                    <td><img src="images/tigger.png" height="100" width="150" /></td>
+                    <td><img src="images/eeyore.png" height="100" width="150" /></td>
+                    <td><img src="images/kangaroo.png" height="100" width="150" /></td>
+                    <td><img src="images/rabbit.png" height="100" width="150" /></td>
+                    <td><img src="images/owl.png" height="100" width="150" /></td>
+                </table>
+            </section>
+            <section id="story">
+                <h2><img src="images/poyon.png" height="100" width="100" alt="poyon">StorY</h2>
+                <p></p>
+                <h5>プーさんの書籍</h5>
+
+
+                <h5>Disney公式ＹＯＵＴＵＢＥ「小さな冒険シリーズ」</h5>
+                <table>
+                    <td><iframe width="250" height="200" src="https://www.youtube.com/embed/JudzH9Lrej0" frameborder="3" allowfullscreen></iframe></td>
+                    <td><iframe width="250" height="200" src="https://www.youtube.com/embed/NYUyZnjltTI" frameborder="3" allowfullscreen></iframe></td>
+                    <td><iframe width="250" height="200" src="https://www.youtube.com/embed/_B4kJgQGVbg" frameborder="3" allowfullscreen></iframe></td>
+                    <td><iframe width="250" height="200" src="https://www.youtube.com/embed/-9uM42mm420" frameborder="3" allowfullscreen></iframe></td>
+                </table>
+            </section>
+            <section id="let">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <h2><img src="images/poyon.png" height="100" width="100" alt="poyon">neWs</h2>
+                    <div id="newslist">
+                        <ul>
+                            <li><strong>2016.11.8.</strong><img src="images/rip.jpg" height="50" width="50"alt=""><a href="http://www.disney.co.jp/shopping/news/20161109_03.html">とろ～り濃密はちみつリップ美容液 ディズニー「くまのプーさん」限定デザイン（エテュセ）</a></li>
+                            <li><strong>2016.11.8.</strong><img src="images/sope.jpg" height="50" width="50" alt=""><a href="http://www.disney.co.jp/shopping/news/20161104_01.html">"クラシックプー"デザインの クリスマスギフトが登場！（ハウス オブ ローゼ）</a></li>
+                            <li><strong>2016.11.8.</strong><img src="images/oseti.jpg" height="50" width="50" alt=""><a href="http://www.bellemaison.jp/ep/srvlt/EPFB00/EPFB0005/dProdDtlShow?BELN_SHOP_KBN=100&KAT_BTGO=C54543_887_2016_01&SHNCRTTKKRO_KBN=CT&LS_CHS_KYU_KBN=1&DM2_KBN=aft_FC.yeGEPnqE">プーさんのフェイス型お重に和洋中の豪華おせちをぎっしり！ (ベルメゾン）</a></li>
+                            <li>2016...Hunny PARTY in 100acre's woods</li>
+                            <li>2016...PC,Master. MATSU brog UP</li>
+                            <li>2016...</li>
+                            <li>2016...</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <h2><img src="images/poyon.png" height="100" width="100" alt="poyon">LeTTeR</h2>
+                    <div class="form">
+                        <form action="/my-handling-form-page" method="post">
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name" required="*" class="col-xs-12 col-md-12"/>
+                            </div>
+                            <div>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_mail" required="*" class="col-xs-12 col-md-12" />
+                            </div>
+                            <div>
+                                <label for="msg">Message:</label>
+                                <textarea id="msg" name="user_message" required="*" class="col-xs-12 col-md-12"></textarea>
+                            </div>
+                            <div class="button ">
+                                <button type="submit">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>    <!-- class=pooh -->
+            <!--banner-->
+        <ul class="footerlist">
+        <li><h3>SHoPs</h3></li>
+            <li><a href="http://store.disney.co.jp/search/goodssearch.aspx?category=201110&scene=category&ex_cmp=TDS_djp_chr"><img src="images/d_store.jpg" height="120" width="250" alt=""></a></li>
+            <li><a href="http://event.rakuten.co.jp/disney/character/pooh/?scid=af_pc_link_urltxt&sc2id=202318832"><img src="images/rakuten.jpg" height="120" width="250" alt=""></a></li>
+            <li><a href="http://www.bellemaison.jp/ep/s/?BELN_SHOP_KBN=102&K=%82%AD%82%DC%82%CC%83%76%81%5B%82%B3%82%F1%7C%83%4E%83%89%83%56%83%62%83%4E%83%76%81%5B&S=d&T=s&SHNCRTTKKRO_KBN=CT&DM3_KBN=22_00054&PR=list_22_pooh&LS_CHS_KYU_KBN=1&DM2_KBN=aft_FC.yeGEPnqE"><img src="images/dfs.jpg" height="120" width="250" alt=""></a></li>
+            <li><a href="https://www.amazon.co.jp/s/ref=as_li_ss_tl?_encoding=UTF8&camp=247&creative=7399&hidden-keywords=%E3%83%97%E3%83%BC&linkCode=ur2&pf_rd_i=3248969051&pf_rd_m=AN1VRQENFRJN5&pf_rd_p=204618729&pf_rd_r=1F5K0MMX22HEWP95ZQEH&pf_rd_s=merchandised-search-10&pf_rd_t=101&rh=i%3Aaps&sort=relevancerank&srs=3248969051&tag=wdigjp-22"><img src="images/amazon.jpg" height="120" width="250" alt=""></a></li>
+        </ul >
+    </div>
+
+
+</body>
+
+</html>

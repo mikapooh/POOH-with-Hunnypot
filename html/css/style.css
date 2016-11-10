@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Montserrat:700';
+
+/* base */
+
+body {
+    font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+
+/*tree=#237D00 hunny=#FFD118 wood=#C5F574 red=#B5403F*/
+
+p {
+    color: #237D00;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+h1 img {
+    margin: auto;
+    display: flex;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify: center;
+}
+
+h2 {
+    color: #B5403F;
+    font-size: 35px;
+    text-align: left;
+    background-color: rgba(255, 209, 24, 0.8);
+    border-bottom: 1.5px dotted #237D00;
+    border-radius: 3px;
+}
+
+h3 {
+    color: #B5403F;
+    font-size: 35px;
+    text-align: center;
+    background-color: rgba(255, 209, 24, 0.8);
+    border-bottom: 1.5px dotted #237D00;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+section {
+    width: 100%;
+    background-color: rgba(197, 245, 116, 0.7);
+}
+
+
+/*#home*/
+
+#home img {
+    width: 100%;
+    border-radius: 3px;
+}
+table{
+    margin: auto;
+    justify: center;
+}
