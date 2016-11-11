@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import 'https://fonts.googleapis.com/css?family=Montserrat:700';
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
 
 /* base */
 
@@ -31,6 +31,7 @@ h1 img {
 }
 
 h2 {
+    font-family: 'Shrikhand', cursive;
     color: #B5403F;
     font-size: 35px;
     text-align: left;
@@ -40,6 +41,7 @@ h2 {
 }
 
 h3 {
+    font-family: 'Shrikhand', cursive;
     color: #B5403F;
     font-size: 35px;
     text-align: center;
@@ -47,6 +49,21 @@ h3 {
     border-bottom: 1.5px dotted #237D00;
     border-radius: 3px;
     margin-top: 5px;
+}
+
+h4 {
+    font-family: 'Shrikhand', cursive;
+    color: #B5403F;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1.5px dotted #237D00;
+}
+
+h5 {
+    clear: both;
+    color: #B5403F;
+    font-size: 25px;
+    border-bottom: 1.5px dotted #237D00;
 }
 
 a {
@@ -74,6 +91,93 @@ ul {
     border-radius: 3px;
 }
 
+
+/*#pooh*/
+
+
+/*#pooh/TILT*/
+
+.tilt {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.tilt:hover {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.data {
+    background: rgba(255, 209, 24, 0.8);
+    border-style: 5px inset;
+    border-radius: 3px;
+}
+
+.data p {
+    border-bottom: 1.5px dotted #237D00;
+}
+
+
+/*#story*/
+
+
+/*#story/BOOKS*/
+
+div.flip-3d {
+    perspective: 300px;
+    width: 200px;
+    float: left;
+}
+
+div.flip-3d figure {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s transform;
+    font-size: 1.6rem;
+}
+
+div.flip-3d figure img {
+    width: 100%;
+    height: 300px;
+}
+
+div.flip-3d figure figcaption {
+    color: #237D00;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    transform: rotateY(.5turn) translateZ(1px);
+    background: rgba(255, 209, 24, 0.8);
+    text-align: center;
+    padding-top: 45%;
+    opacity: 0.6;
+    transition: 1s .5s opacity;
+}
+
+div.flip-3d:hover figure {
+    transform: rotateY(.5turn);
+}
+
+div.flip-3d:hover figure figcaption {
+    opacity: 1;
+}
+
+div.flip-3d figure:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 50px;
+    transform: rotateX(90deg);
+    background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
 table {
     margin: auto;
     justify: center;
@@ -89,7 +193,7 @@ table {
 }
 
 #newslist {
-    background: radial-gradient(#FFD118, #237D00);
+    background: radial-gradient(rgba(255, 209, 24, 0.5), rgba(35, 125, 0, 0.5));
     position: relative;
     padding: 5px;
     width: 100%;
@@ -112,4 +216,22 @@ table {
 
 #newslist > ul > li {
     border-bottom: 1px dotted #C5F574;
+}
+
+
+/*#letter*/
+
+label {
+    font-family: 'Shrikhand', cursive;
+    color: #237D00;
+    font-size: 21px;
+    text-align: left;
+}
+textarea{
+    margin-bottom: 15px;
+}
+.button{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    color: #237D00;
 }
